@@ -24,7 +24,7 @@
   <!-- AR Scene -->
   <a-scene
     arjs='detectionMode: mono_and_matrix; 
-    matrixCodeType: 3x3; 
+    matrixCodeType: 3x3;
     trackingMethod: best;'
     renderer="logarithmicDepthBuffer: true;"
     vr-mode-ui="enabled: false"
@@ -34,14 +34,15 @@
           <a-assets>
             <!-- Preload and store the video asset for later use -->
             <video 
-              preload="none" 
-              id="vscipsusciopen" 
-              response-type="arraybuffer" 
-              loop="false" 
-              crossorigin 
-              webkit-playsinline 
-              playsinline 
-              controls
+            response-type="arraybuffer" 
+            loop 
+            crossorigin 
+            webkit-playsinline
+            playsinline 
+            controls
+            id="vscipsusciopen" 
+            muted
+            preload="none"
             >
               <source src="/videos/hny2022.mp4">
             </video>

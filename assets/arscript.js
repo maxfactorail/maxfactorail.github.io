@@ -1,6 +1,6 @@
 
 // Invitation Video Handler
-
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 AFRAME.registerComponent("video-vidhandler", {
     schema: {
         element: { default: "" },
@@ -8,14 +8,16 @@ AFRAME.registerComponent("video-vidhandler", {
     },
     init: function () {
         console.log("vidint", this.data.videoId);
+        this.toggle = false;
         this.vid = this.data.videoId && document.querySelector(this.data.videoId);
-        console.log("vidint", this.vid);
+        if (!isSafari) this.vid.muted = false;
         this.vid.pause();
     },
     tick: function () {
         if (this.el.object3D.visible == true) {
             if (!this.toggle) {
                 this.toggle = true;
+                if (!isSafari) this.vid.muted = false;
                 this.vid.play();
             }
         } else {
