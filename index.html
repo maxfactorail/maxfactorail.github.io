@@ -69,6 +69,27 @@
             controls
         />
           </a-nft>
+          <a-nft
+            videohandler
+            type="nft"
+            url="/markers/teach/teach"
+            video-vidhandler="videoId: #vscipsusciopen;"
+            smooth="true" 
+            smoothCount="10" 
+            smoothTolerance="0.01" 
+            smoothThreshold="5"
+            onmarkerfound="onmarkerfound"
+            onmarkerlost="onmarkerlost"
+          >
+          <a-plane 
+            scale="480 576" 
+            position="0 50 0" 
+            rotation="-90 0 0" 
+            material="transparent:true;
+            src:#vscipsusciopen" 
+            controls
+        />
+          </a-nft>
     <!-- Camera entity for user perspective and interaction -->
     <a-entity camera look-controls-enabled="false" mouse-cursor></a-entity>
   </a-scene>
