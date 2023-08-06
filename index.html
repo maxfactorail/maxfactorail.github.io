@@ -6,7 +6,9 @@
     <script type="module" src="/assets/arscript.js"></script>
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: /markers/17.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene
+    video-vidhandler="videoId: #vscipsusciopen;"
+     mindar-image="imageTargetSrc: /markers/17.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
         <!-- Preload and store the video asset for later use -->
         <video 
@@ -32,14 +34,6 @@
       video-vidhandler="videoId: #vscipsusciopen;"
       >
       <a-plane src="#vscipsusciopen" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-        <a-plane 
-        scale="480 480" 
-        position="0 50 0" 
-        rotation="-90 0 0" 
-        material="transparent:true;
-        src:#vscipsusciopen" 
-        controls
-    />
       </a-entity>
     </a-scene>
   </body>
