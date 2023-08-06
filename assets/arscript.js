@@ -18,7 +18,8 @@ AFRAME.registerComponent("video-vidhandler", {
             if (!this.toggle) {
                 this.toggle = true;
                 if (!isSafari) this.vid.muted = false;
-                this.vid.play();
+
+            this.vid.play();
             }
         } else {
             this.toggle = false;
