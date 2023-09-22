@@ -2,6 +2,7 @@
 
 
  ## WEB
- [go to web](maxfactorail.githup.io)
+ [go to web](https://maxfactorail.github.io/)
+
 
  ## AR PSU
